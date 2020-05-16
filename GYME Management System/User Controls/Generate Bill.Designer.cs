@@ -31,16 +31,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.txt_mounth = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.txt_year = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,7 +65,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txt_mounth);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button5);
@@ -82,17 +79,6 @@
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Generate Bill  :";
-            // 
-            // button1
-            // 
-            this.button1.Image = global::GYME_Management_System.Properties.Resources.search_40px1;
-            this.button1.Location = new System.Drawing.Point(756, 48);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 82);
-            this.button1.TabIndex = 86;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_mounth
             // 
@@ -131,7 +117,7 @@
             // button5
             // 
             this.button5.Image = global::GYME_Management_System.Properties.Resources.print_48px;
-            this.button5.Location = new System.Drawing.Point(925, 48);
+            this.button5.Location = new System.Drawing.Point(828, 42);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(128, 82);
@@ -159,30 +145,29 @@
             this.label12.TabIndex = 81;
             this.label12.Text = "Year  :";
             // 
-            // dataGridView1
+            // crystalReportViewer1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 293);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1195, 486);
-            this.dataGridView1.TabIndex = 57;
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(8, 274);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1521, 798);
+            this.crystalReportViewer1.TabIndex = 59;
             // 
             // Generate_Bill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "Generate_Bill";
-            this.Size = new System.Drawing.Size(1320, 798);
+            this.Size = new System.Drawing.Size(1559, 1088);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,8 +180,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox txt_year;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox txt_mounth;
-        private System.Windows.Forms.Button button1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }

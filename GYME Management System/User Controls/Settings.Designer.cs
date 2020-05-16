@@ -90,6 +90,7 @@
             this.linkLabel2.TabIndex = 88;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Change User Role";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel3
             // 
@@ -101,6 +102,7 @@
             this.linkLabel3.TabIndex = 89;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Delete User";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // linkLabel4
             // 

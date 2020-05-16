@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CrystalDecisions.CrystalReports.Engine;
+using System.Web.Hosting;
+using CrystalDecisions.Windows.Forms;
 
 namespace GYME_Management_System.User_Controls
 {
@@ -23,16 +26,22 @@ namespace GYME_Management_System.User_Controls
 
         private void button5_Click(object sender, EventArgs e)
         {
-           
+            
+            ReportDocument cryRpt = new ReportDocument();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM GenerateBill  WHERE Payment_ID ='"+txt_year.Text+"' ", con) ;
+
+            DataSet dst = new DataSet();
+
+            sda.Fill(dst, "GenerateBill");
+            cryRpt.Load(@"C:\Users\pc\Music\GYME\GYME Management System\GYME Management System\reportingBill.rpt ");
+            cryRpt.SetDataSource(dst);
+            crystalReportViewer1.ReportSource = cryRpt;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "  SELECT * FROM PAyment WHERE Year= '" + txt_year.Text + "'and Month='" + txt_mounth.Text + "' ";
-            SqlDataAdapter sda = new SqlDataAdapter(sql, con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
+            
         }
     }
 }

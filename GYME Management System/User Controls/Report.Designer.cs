@@ -32,23 +32,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Customer = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txt_search = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.Customer.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -99,21 +99,6 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1385, 645);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Trainers Report";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -140,6 +125,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search By Member Info: ";
             // 
+            // button1
+            // 
+            this.button1.Image = global::GYME_Management_System.Properties.Resources.print_48px;
+            this.button1.Location = new System.Drawing.Point(1072, 23);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 75);
+            this.button1.TabIndex = 84;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // txt_search
             // 
             this.txt_search.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,6 +155,31 @@
             this.label12.Size = new System.Drawing.Size(141, 28);
             this.label12.TabIndex = 79;
             this.label12.Text = "Search By :";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button5);
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1385, 645);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Trainers Report";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // button5
+            // 
+            this.button5.Image = global::GYME_Management_System.Properties.Resources.print_48px;
+            this.button5.Location = new System.Drawing.Point(1128, 41);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(130, 63);
+            this.button5.TabIndex = 85;
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -210,26 +230,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(1204, 500);
             this.dataGridView2.TabIndex = 83;
             // 
-            // button5
-            // 
-            this.button5.Image = global::GYME_Management_System.Properties.Resources.print_48px;
-            this.button5.Location = new System.Drawing.Point(1128, 41);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 63);
-            this.button5.TabIndex = 85;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::GYME_Management_System.Properties.Resources.print_48px;
-            this.button1.Location = new System.Drawing.Point(1072, 27);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 63);
-            this.button1.TabIndex = 84;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -243,10 +243,10 @@
             this.panel1.PerformLayout();
             this.Customer.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

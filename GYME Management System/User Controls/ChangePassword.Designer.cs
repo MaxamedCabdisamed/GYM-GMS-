@@ -63,6 +63,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(697, 514);
             this.panel1.TabIndex = 92;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -86,6 +87,7 @@
             this.btn_update.TabIndex = 62;
             this.btn_update.Text = "Change Password";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // label5
             // 

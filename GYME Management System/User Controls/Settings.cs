@@ -38,5 +38,21 @@ namespace GYME_Management_System.User_Controls
             SettingPanel.Controls.Clear();
             SettingPanel.Controls.Add(chp);
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Users_Registration usr = new Users_Registration();
+            usr.Dock = DockStyle.Fill;
+            SettingPanel.Controls.Clear();
+            SettingPanel.Controls.Add(usr);
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ChangeUserRole chUser = new ChangeUserRole();
+            chUser.Dock = DockStyle.Fill;
+            SettingPanel.Controls.Clear();
+            SettingPanel.Controls.Add(chUser);
+        }
     }
 }

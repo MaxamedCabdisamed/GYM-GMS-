@@ -20,7 +20,7 @@ namespace GYME_Management_System
         Users_Registration usr = new Users_Registration();
         Settings set = new Settings();
         Pyment py = new Pyment();
-        Generate_Bill gb = new Generate_Bill();
+        
         Home hm = new Home();
         Report rp = new Report();
 
@@ -155,7 +155,7 @@ namespace GYME_Management_System
         private void btn_GenerateBill_Click(object sender, EventArgs e)
         {
             Movesidepanel(btn_GenerateBill);
-
+            Generate_Bill gb = new Generate_Bill();
             gb.Dock = DockStyle.Fill;
             desktopPanel.Controls.Clear();
             desktopPanel.Controls.Add(gb);

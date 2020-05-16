@@ -86,6 +86,7 @@
             this.btn_update.TabIndex = 62;
             this.btn_update.Text = "Change User Role";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // label5
             // 
